@@ -9,7 +9,7 @@ const accountId = "20240824";
     console.log(`accountName: ${accountName}`);
 
     var accountPassword = "123456";
-    //> var has no scoping / globally scoped
+    //> var is function scoped
 }
 
 accountCity = "Bhopal";
