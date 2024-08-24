@@ -44,3 +44,17 @@ str = undefined;
 boolFromStr = Boolean(str);
 console.table([typeof str, typeof boolFromStr, boolFromStr]);
 // undefined, boolean, false
+
+
+num = 10;
+let negNum = -num;
+console.log(negNum); // -10
+
+console.log("1" + "2"); // 12
+console.log("1" + 2); // 12
+console.log(1 + "2"); // 12
+console.log("1" + 2 + 3); // 123
+console.log(1 + 2 + "3"); // 33
+console.log(+true); // 1
+console.log(+false); // 0
+console.log(+""); // 0
