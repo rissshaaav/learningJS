@@ -3,15 +3,15 @@
 //~ datatypes ; range ; return type
 
 //- Number ; -(2^53 - 1) to (2^53 - 1) ; "number"
-const num = 2;
+let num = 2;
 console.log(typeof num);
 
 //- BigInt ; >number ; "bigint"
-const bigNum = BigInt(Number.MAX_SAFE_INTEGER) + 10n;
+let bigNum = BigInt(Number.MAX_SAFE_INTEGER) + 10n;
 console.log(typeof bigNum);
 
 //- String ; "anything" ; "string"
-const str = "aString";
+let str = "aString";
 console.log(typeof str);
 
 //- Boolean ; true/false ; "boolean"
