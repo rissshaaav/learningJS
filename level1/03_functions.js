@@ -31,3 +31,21 @@ const greet = function (name = "Birju") {
 };
 console.log(greet()); // Hello, Birju
 console.log(greet("Rishav")); // Hello, Rishav
+
+// taking any number of arguments
+let takeManyNumbers = function (...nums) {
+    // rest operator; returns a list
+    return nums;
+};
+console.log(takeManyNumbers(1, 2, 3, 4));
+console.log(takeManyNumbers(1, 2));
+
+let user = {
+    name: "rishav",
+    age: 22,
+    gender: "male",
+};
+function displayUserInfo(user) {
+    console.log(`User name: ${user.name}, age: ${user.age} and ${user.gender}`);
+}
+displayUserInfo(user);
