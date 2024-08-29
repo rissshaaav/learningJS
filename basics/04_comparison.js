@@ -33,4 +33,14 @@ console.log(undefined == 0); // false
 console.log(undefined >= 0); // false
 
 //~ falsy values: false, 0, -0, BigInt 0n, "", null, undefined, NaN
-//~ important truthy values: [], {}, function(){}, 
+//~ important truthy values: [], {}, function(){},
+
+//~ null coalescing operator:
+let data = null ?? 10;
+console.log(data); // 10, truthy value is assigned
+
+data = undefined ?? 11;
+console.log(data); // 11, truthy value is assigned
+
+data = 5 ?? 12;
+console.log(data); // 5, first truthy
