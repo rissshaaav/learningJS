@@ -31,3 +31,6 @@ console.log(undefined < 0); // false
 console.log(undefined > 0); // false
 console.log(undefined == 0); // false
 console.log(undefined >= 0); // false
+
+//~ falsy values: false, 0, -0, BigInt 0n, "", null, undefined, NaN
+//~ important truthy values: [], {}, function(){}, 
