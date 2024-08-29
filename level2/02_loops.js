@@ -21,6 +21,19 @@ for (let i = 0; i < 10; i++) {
     console.log("for with continue: ", i);
 }
 
+//~ for-of loop
+let arr = ["rishav", 2, 3, "kumar"];
+for (const i of arr) {
+    console.log("for-of: ", i);
+}
+
+//~ for-each loop
+//? this loop doesn't return any value
+let array = ["one", 2, "three", 4];
+array.forEach((element) => {
+    console.log("for-each: ", element);
+});
+
 //~ while loop
 
 let i = 0;
@@ -37,3 +50,39 @@ do {
     console.log("do-while: ", j);
     j++;
 } while (j < 10);
+
+//~ filter
+let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log(nums.filter((num) => num > 6));
+
+//~ map
+let names = ["rishav", "srishti", "ravi", "vidushi"];
+console.log(names.map((name) => `Hello ${name}`));
+
+//~ reduce
+const numbers = [1, 2, 3, 4, 5];
+const sum = numbers.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;
+}, 0);
+console.log(sum); // Output: 15
+
+
+const people = [
+    { name: "Alice", age: 25 },
+    { name: "Bob", age: 30 },
+    { name: "Alice", age: 22 },
+    { name: "Bob", age: 35 },
+];
+const groupedByName = people.reduce((accumulator, person) => {
+    if (!accumulator[person.name]) {
+        accumulator[person.name] = [];
+    }
+    accumulator[person.name].push(person.age);
+    return accumulator;
+}, {});
+console.log(groupedByName);
+// Output:
+// {
+//   Alice: [25, 22],
+//   Bob: [30, 35]
+// }
